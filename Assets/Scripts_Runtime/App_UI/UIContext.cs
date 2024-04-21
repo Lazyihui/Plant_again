@@ -8,8 +8,10 @@ public class UIContext {
     public AssetsContext assetsContext;
 
     public Canvas canvas;
-    public UIContext() {
 
+    public UIEvents uiEvents;
+    public UIContext() {
+        uiEvents = new UIEvents();
         
     }
 
