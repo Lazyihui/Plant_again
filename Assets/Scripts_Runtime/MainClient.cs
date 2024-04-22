@@ -14,13 +14,28 @@ public class MainClient : MonoBehaviour {
         // ==== Load ====
         AssetsCore.Load(ctx.assetsContext);
         // ==== Binding ====
+        Binding();
 
         // ==== Init ====
 
         // ==== Enter ====
+        UIApp.Panel_Login_Open(ctx.uiContext);
+
 
 
         Debug.Log("Hello World");
+    }
+
+
+    void Binding() {
+
+        var uiContext = ctx.uiContext.uiEvents;
+
+        uiContext.Login_StartGameHanedle = () => {
+
+            Debug.Log("hhh");
+        };
+
     }
 
     void Update() {

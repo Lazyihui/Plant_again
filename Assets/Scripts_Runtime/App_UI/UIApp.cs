@@ -18,6 +18,7 @@ public static class UIApp {
             panel = GameObject.Instantiate(Prefab, ctx.canvas.transform).GetComponent<Panel_Login>();
             panel.Ctor();
             panel.OnStartClickHandle = () => {
+                ctx.uiEvents.Login_StartGame();
 
             };
             ctx.panel_Login = panel;

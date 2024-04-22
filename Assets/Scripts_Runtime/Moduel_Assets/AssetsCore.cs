@@ -10,17 +10,18 @@ public static class AssetsCore {
 
     public static void Load(AssetsContext ctx) {
 
-        {
+        // {
 
-            AssetLabelReference labelReference = new AssetLabelReference();
-            labelReference.labelString = "Entity";
-            var handle = Addressables.LoadAssetsAsync<GameObject>(labelReference, null);
-            var list = handle.WaitForCompletion();
-            foreach (var go in list) {
-                ctx.entity.Add(go.name, go);
-            }
-            ctx.entitiyHandle = handle;
-        }
+        //     AssetLabelReference labelReference = new AssetLabelReference();
+        //     labelReference.labelString = "Entity";
+        //     var handle = Addressables.LoadAssetsAsync<GameObject>(labelReference, null);
+        //     var list = handle.WaitForCompletion();
+        //     foreach (var go in list) {
+        //         ctx.entity.Add(go.name, go);
+        //     }
+        //     ctx.entitiyHandle = handle;
+        // }
+        
         {
 
             AssetLabelReference labelReference = new AssetLabelReference();
